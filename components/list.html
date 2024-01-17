@@ -1,0 +1,34 @@
+<!-- List Components -->
+<ul class="list list--tick">
+	<li class="list__item">item 1</li>
+	<li class="list__item">item 2</li>
+	<li class="list__item">item 3</li>
+</ul>
+<!--  -->
+<style>
+	.list {
+		list-style: none;
+		padding-left: 0;
+		color: var(--color-heading);
+	}
+
+	.list--inline .list__item {
+		display: inline-block;
+		margin-right: 2rem;
+	}
+	.list--tick {
+		list-style-image: url(icons/tick.svg);
+		padding-left: 3rem;
+	}
+
+	.list--tick .list__item {
+		padding-left: 0.5rem;
+		margin-bottom: 1rem;
+	}
+
+	@media screen and (min-width: 1024px) {
+		.list--tick .list__item {
+			padding-left: 0;
+		}
+	}
+</style>
