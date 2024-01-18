@@ -1,0 +1,44 @@
+<!-- input-group component -->
+<div class="input-group" tabindex="0" aria-label="input group">
+	<input type="text" class="input" placeholder="Enter domain name here..." />
+	<button class="btn btn--accent">Search</button>
+</div>
+
+<style>
+	.input {
+		padding: 1.5rem 3rem;
+		border: 1px solid var(--color-border);
+		border-radius: var(--border-radius);
+		color: var(--color-heading);
+		font-size: 2rem;
+		outline-color: transparent; /* 0 will deactivate focus */
+	}
+	::placeholder {
+		color: #cdcbd7;
+	}
+
+	.input-group {
+		border: 1px solid var(--color-border);
+		border-radius: var(--border-radius);
+		display: flex;
+		padding: 1.5px;
+	}
+
+	.input-group .input {
+		border: 0;
+		flex-grow: 1;
+		padding: 1.5rem 1rem;
+	}
+
+	.input-group .btn {
+		margin: 2px;
+	}
+	@media screen and (min-width: 1024px) {
+		.input {
+			font-size: 1.5rem;
+		}
+		.input-group {
+			padding: 1.8px;
+		}
+	}
+</style>
