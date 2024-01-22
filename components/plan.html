@@ -1,0 +1,73 @@
+<!-- plan component -->
+<!-- removee this wrapper -->
+<div style="width: 50%">
+	<div class="plan plan--popular">
+		<div class="card card--secondary">
+			<header class="card__header">
+				<h3 class="plan__name">Entry</h3>
+				<span class="plan__price">$14</span>
+				<span class="plan__billing-cycle">/month</span>
+				<span class="badge badge--secondary badge--small">10% off</span>
+				<span class="plan__description">Easy start on the cloud</span>
+			</header>
+			<div class="card__body">
+				<ul class="list list--tick">
+					<li class="list__item">Unlimited Websites</li>
+					<li class="list__item">Unlimited Bandwidth</li>
+					<li class="list__item">100 GB SSD Storage</li>
+					<li class="list__item">3 GB RAM</li>
+				</ul>
+				<button class="btn btn--outline btn--block">Buy Now</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<style>
+	.plan {
+		& .list__item {
+			margin-bottom: 2rem;
+		}
+	}
+	.plan__name {
+		color: #fff;
+		margin: 0;
+		font-weight: 500;
+		font-size: 2.4rem;
+	}
+	.plan__price {
+		font-size: 6rem;
+	}
+
+	.plan__billing-cycle {
+		font-size: 2.4rem;
+		font-weight: 300;
+		margin-right: 1rem;
+		opacity: 0.8;
+	}
+
+	.plan__description {
+		display: block;
+		font-size: 2rem;
+		font-weight: 300;
+		letter-spacing: 1px;
+	}
+
+	.card--secondary .badge--secondary {
+		background: color-mix(in srgb, var(--color-secondary) 60%, #fff);
+	}
+
+	.plan--popular {
+		& .card__header {
+			position: relative;
+		}
+
+		& .card__header::before {
+			content: url(icons/popular.svg);
+			width: 40px;
+			display: inline-block;
+			position: absolute;
+			inset: -6px 5% auto auto;
+		}
+	}
+</style>

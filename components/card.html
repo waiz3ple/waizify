@@ -1,0 +1,34 @@
+<!-- card -->
+<!-- removee this wrapper -->
+<div style="width: 30%">
+	<div class="card card--secondary">
+		<header class="card__header">Card Title</header>
+		<div class="card__body">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecat
+		</div>
+	</div>
+</div>
+
+<style>
+	/* card */
+	.card {
+		border-radius: 7px;
+		box-shadow: 0 0 20px 10px #f3f3f3;
+		overflow: hidden;
+	}
+
+	.card__header,
+	.card__body {
+		padding: 2rem 3rem;
+	}
+
+	.card--primary .card__header {
+		background-color: var(--color-primary);
+		color: #fff;
+	}
+
+	.card--secondary .card__header {
+		background-color: var(--color-secondary);
+		color: #fff;
+	}
+</style>
