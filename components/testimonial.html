@@ -1,0 +1,67 @@
+<div class="card testimonial">
+	<div class="grid grid--1x2">
+		<div class="testimonial__image">
+			<img src="images/testimonial.jpg" alt="A happy, smilling customer" />
+			<span class="icon-container icon-container--accent">
+				<svg class="icon icon--primary icon--white icon--small">
+					<use href="icons/sprite.svg#quotes"></use>
+				</svg>
+			</span>
+		</div>
+		<blockquote class="quote">
+			<p class="quote__text">
+				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci illo
+				blanditiis sequi ad dolores laboriosam quasi eum nostrum in expedita.
+			</p>
+			<footer>
+				<div class="media">
+					<div class="media__image">
+						<svg class="icon icon--primary quote-line">
+							<use href="icons/sprite.svg#line"></use>
+						</svg>
+					</div>
+					<div class="media__body">
+						<h3 class="media__title quote__author">Cody Akanmu</h3>
+						<p class="quote__company">Waizify Inc.</p>
+					</div>
+				</div>
+			</footer>
+		</blockquote>
+	</div>
+</div>
+
+<style>
+	.testimonial {
+		padding: 3rem;
+
+		& .testimonial__image {
+			position: relative;
+
+			& > img {
+				width: 100%;
+			}
+
+			& > .icon-container {
+				position: absolute;
+				inset: 3rem -32px auto auto;
+				background: var(--color-accent);
+			}
+		}
+
+		.icon--white {
+			fill: #fff;
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		.testimonial {
+			& .quote {
+				font-size: 2.4rem;
+				margin-left: 6rem;
+			}
+			.quote__author {
+				font-size: 2.4rem;
+			}
+		}
+	}
+</style>

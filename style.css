@@ -213,6 +213,11 @@ a {
 	fill: var(--color-primary);
 }
 
+.icon--small {
+	width: 30px;
+	height: 30px;
+}
+
 /* input */
 .input {
 	padding: 1.5rem 3rem;
@@ -398,6 +403,56 @@ a {
 	}
 }
 
+/* grid 1x2 */
+.grid {
+	display: grid;
+}
+
+@media screen and (min-width: 768px) {
+	.grid--1x2 {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.grid--1x3 {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+.testimonial {
+	padding: 3rem;
+
+	& .testimonial__image {
+		position: relative;
+
+		& > img {
+			width: 100%;
+		}
+
+		& > .icon-container {
+			position: absolute;
+			inset: 3rem -32px auto auto;
+			background: var(--color-accent);
+		}
+	}
+
+	.icon--white {
+		fill: #fff;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.testimonial {
+		& .quote {
+			font-size: 2.4rem;
+			margin-left: 6rem;
+		}
+		.quote__author {
+			font-size: 2.4rem;
+		}
+	}
+}
 /* ############################# */
 /* for Laptops and Desktops */
 @media screen and (min-width: 1024px) {
